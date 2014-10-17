@@ -38,13 +38,19 @@ namespace assignmet_2
                         primeFound = false;
                         break;
                     }
+                    
                 }
+                
 
                 if (primeFound)
                     return i;
+                if (i == max) {
+                        i = (uint)Math.Pow(2, 30) + 1;
+                }
                    // Console.WriteLine(i);
                     //count++;
-            } 
+            }
+            Console.WriteLine((uint)Math.Pow(2, 30) + 1);
             return getPrime((uint)Math.Pow(2,30)+1);//Console.WriteLine("among = "+count);
         }
 
